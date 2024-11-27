@@ -15,13 +15,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "5648e63b-b948-334d-b740-f67469a8158c",
+            "groupId" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
             "id" : "17aa9ca9-82a0-329c-b0ff-f60d29a61845",
             "name" : "PutDatabaseRecord",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "5648e63b-b948-334d-b740-f67469a8158c",
+          "groupIdentifier" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
           "identifier" : "a78d3c43-742a-3658-a1da-0ecfb975ee31",
           "labelIndex" : 0,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -32,7 +32,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "5648e63b-b948-334d-b740-f67469a8158c",
+            "groupId" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
             "id" : "1881bca0-4b1e-330e-95ef-8983811dfb7e",
             "name" : "ConvertRecord",
             "type" : "PROCESSOR"
@@ -45,13 +45,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "5648e63b-b948-334d-b740-f67469a8158c",
+            "groupId" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
             "id" : "1881bca0-4b1e-330e-95ef-8983811dfb7e",
             "name" : "ConvertRecord",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "5648e63b-b948-334d-b740-f67469a8158c",
+          "groupIdentifier" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
           "identifier" : "ee66d424-7abc-342d-bb80-46cbbaee1484",
           "labelIndex" : 0,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -62,7 +62,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "5648e63b-b948-334d-b740-f67469a8158c",
+            "groupId" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
             "id" : "5e584b3e-98ef-3476-acaa-b6ac73c160f4",
             "name" : "GenerateFlowFile",
             "type" : "PROCESSOR"
@@ -85,7 +85,7 @@
             },
             "type" : "org.apache.nifi.serialization.RecordReaderFactory"
           } ],
-          "groupIdentifier" : "5648e63b-b948-334d-b740-f67469a8158c",
+          "groupIdentifier" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
           "identifier" : "182e4e5d-7f54-3e05-9074-f0d1ca171c63",
           "name" : "JsonTreeReader",
           "properties" : {
@@ -212,11 +212,12 @@
             },
             "type" : "org.apache.nifi.dbcp.DBCPService"
           } ],
-          "groupIdentifier" : "5648e63b-b948-334d-b740-f67469a8158c",
+          "groupIdentifier" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
           "identifier" : "5c21cc61-61eb-3da0-9db8-31994fd66e9a",
           "name" : "HikariCPConnectionPool",
           "properties" : {
             "hikaricp-max-total-conns" : "10",
+            "hikaricp-password" : "#{db_passw}",
             "hikaricp-driver-classname" : "org.postgresql.Driver",
             "hikaricp-min-idle-conns" : "10",
             "hikaricp-username" : "pil#admin",
@@ -310,7 +311,7 @@
             },
             "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
           } ],
-          "groupIdentifier" : "5648e63b-b948-334d-b740-f67469a8158c",
+          "groupIdentifier" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
           "identifier" : "fad420a4-1f44-3b27-af50-41ab1ea66dcb",
           "name" : "JsonRecordSetWriter",
           "properties" : {
@@ -446,14 +447,15 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "5648e63b-b948-334d-b740-f67469a8158c",
+        "identifier" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
         "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "Inserta en MyEntity",
         "outputPorts" : [ ],
+        "parameterContextName" : "Entorno desa",
         "position" : {
-          "x" : -157.0,
-          "y" : -150.8000030517578
+          "x" : -224.0,
+          "y" : -168.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -468,7 +470,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "5648e63b-b948-334d-b740-f67469a8158c",
+          "groupIdentifier" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
           "identifier" : "5e584b3e-98ef-3476-acaa-b6ac73c160f4",
           "name" : "GenerateFlowFile",
           "penaltyDuration" : "30 sec",
@@ -547,7 +549,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "5648e63b-b948-334d-b740-f67469a8158c",
+          "groupIdentifier" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
           "identifier" : "1881bca0-4b1e-330e-95ef-8983811dfb7e",
           "name" : "ConvertRecord",
           "penaltyDuration" : "30 sec",
@@ -599,7 +601,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "5648e63b-b948-334d-b740-f67469a8158c",
+          "groupIdentifier" : "7a91e427-5280-3c63-8c34-0a16ddd01d27",
           "identifier" : "17aa9ca9-82a0-329c-b0ff-f60d29a61845",
           "name" : "PutDatabaseRecord",
           "penaltyDuration" : "30 sec",
@@ -786,7 +788,16 @@
         "variables" : { }
       },
       "flowEncodingVersion" : "1.0",
-      "parameterContexts" : { }
+      "parameterContexts" : {
+        "Entorno desa" : {
+          "name" : "Entorno desa",
+          "parameters" : [ {
+            "description" : "clave de acceso a db postgres",
+            "name" : "db_passw",
+            "sensitive" : true
+          } ]
+        }
+      }
     }
   }
 }
