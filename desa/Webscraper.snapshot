@@ -106,7 +106,7 @@
           "properties" : {
             "URL_PROPERTY" : "https://bethedriver.global/es/contacto/",
             "DATA_ATTRIB_SELECTOR" : "href",
-            "CHROME_DRIVER_PATH" : "D:\\\\selenium\\\\chrome-win64\\\\chromedriver.exe",
+            "CHROME_DRIVER_PATH" : "/opt/nifi/nifi-current/drivers/chrome-linux64/chrome-win64/chromedriver",
             "DATA_CSS_SELECTOR" : "body > main > div > section > div > div > div.col-12.col-lg-6.my-3.text > ul > li.facebook > a"
           },
           "propertyDescriptors" : {

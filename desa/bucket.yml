@@ -2,8 +2,8 @@ flows:
   2e8a09c0-2e1f-4508-8e0e-e3164c714d76: {ver: 3, file: Inserta_en__MyEntity.snapshot,
     comments: agregado parametrizado, author: anonymous, created: 1732719355738, flowName: Inserta
       en  MyEntity, flowDesc: ''}
-  434f1e63-358d-4713-a6ed-584b93b19a7a: {ver: 1, file: Webscraper.snapshot, comments: '',
-    author: anonymous, created: 1732816075753, flowName: Webscraper, flowDesc: Prueba
-      de scrapping necesita processor Webscraper BTD}
+  434f1e63-358d-4713-a6ed-584b93b19a7a: {ver: 2, file: Webscraper.snapshot, comments: ajuste
+      path chrome drive, author: anonymous, created: 1732817006872, flowName: Webscraper,
+    flowDesc: Prueba de scrapping necesita processor Webscraper BTD}
 layoutVer: 1
 bucketId: eff32241-1929-4509-8898-718ba097540a
